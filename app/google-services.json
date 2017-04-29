@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "451551784220",
+    "firebase_url": "https://astro-8b667.firebaseio.com",
+    "project_id": "astro-8b667",
+    "storage_bucket": "astro-8b667.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451551784220:android:f5428602ffd76e23",
+        "android_client_info": {
+          "package_name": "com.tnjdevelopers.astropraxis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451551784220-cl5rjfvfsa48t2fis9h7ve1chtu6d84c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tnjdevelopers.astropraxis",
+            "certificate_hash": "9A05D9F923ABDC3F38F91F49F60341D525490AD2"
+          }
+        },
+        {
+          "client_id": "451551784220-p9ibnejarc6ca30kr1pj2d4dre9gmkc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxQXriyeUoWA3MEc3S6Ty6hb1ApGEgIP4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451551784220-p9ibnejarc6ca30kr1pj2d4dre9gmkc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tnjdevelopers.rodi.ImageCrop">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/rlayout"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageToCrop"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"/>
+
+        <ImageView
+            android:id="@+id/imageCircleTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageToCrop"
+            android:layout_alignLeft="@+id/imageToCrop"
+            app:srcCompat="@drawable/circle"/>
+
+        <ImageView
+            android:id="@+id/imageCircleTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageToCrop"
+            android:layout_alignRight="@+id/imageToCrop"
+            app:srcCompat="@drawable/circle"/>
+
+        <ImageView
+            android:id="@+id/imageCircleBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageToCrop"
+            android:layout_alignBottom="@+id/imageToCrop"
+            app:srcCompat="@drawable/circle"/>
+
+        <ImageView
+            android:id="@+id/imageCircleBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageToCrop"
+            android:layout_alignRight="@+id/imageToCrop"
+            app:srcCompat="@drawable/circle"/>
+
+        <Button
+            android:id="@+id/buttonCrop"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/crop"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/background_light"
+            android:background="@color/colorAccent"
+            android:onClick="onRectify"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/background_light"
+            android:padding="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="onSaveImage"/>
+
+        <Button
+            android:id="@+id/buttonGrayscale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grayscale"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/background_light"
+            android:background="@color/colorAccent"
+            android:onClick="onConvertGrayscale"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
